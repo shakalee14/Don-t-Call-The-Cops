@@ -20,6 +20,11 @@ const createResource = attributes => {
   return db.one( sql, variables );
 }
 
+const getAllResources = () => {
+  return db.any('SELECT * FROM resources')
+}
+
 module.exports = {
   createResource: createResource,
+  getAllResources: getAllResources
 }

@@ -1,0 +1,35 @@
+createresource
+  form.resource(method="post" action="/addresource")
+    label Name of Resource
+    br
+    input.resource(type="text" name="name" placeholder="Name of Resource")
+    br
+    label Best Number to Call
+    br
+    input.resource(type="tel" name="phone_number" placeholder="Phone Number")
+    br
+    label Address
+    br
+    input.resource(type="text" name="address" placeholder="")
+    br
+    label Website URL
+    br
+    input.resource(type="text" name="website_url" placeholder="Website?")
+    br
+    label Zipcode
+    br
+    input.resource(type="text" name="zipcode" placeholder="Zipcode")
+    br
+    label Resource uploaded by
+    br
+    input.resource(type="text" name="created_by" placeholder="Optional")
+    br
+    label Description of Resource (why is this resource helpful)
+    br
+    input.resource(type="text" name="description" placeholder="Optional")
+    br
+    label Number of Votes
+    br
+    input.resource(type="number" name="votes" placeholder="Votes")
+    br
+    input.button(type="submit" value="Create Resource")

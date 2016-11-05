@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Current List
+  for resource in resources
+    h3=resource.name
+    h4=resource.phonenumber
+    p=resource.votes
+    p=resource.description
+
+
