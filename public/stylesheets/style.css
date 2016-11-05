@@ -7,7 +7,7 @@ a {
 
 h1 {
   font-family: 'Dosis', sans-serif;
-  font-weight: 800
+  font-weight: 800;
   color: #302E31;
 }
 
@@ -15,8 +15,9 @@ h2, h3, h4, h5, p {
   font-family: 'Lato', sans-serif;
 }
 
-.section-1 {
+.section-1, .section-3 {
   text-align: center;
+  padding: 20px;
 }
 
 .section-2 {
@@ -27,4 +28,11 @@ h2, h3, h4, h5, p {
   background-size: cover;
   max-width: 100%;
   height: 100%;
+}
+
+.enter-site-button {
+  color: #fff;
+  background-color: #2BA84A;
+  position: relative;
+  margin-top: 10px;
 }

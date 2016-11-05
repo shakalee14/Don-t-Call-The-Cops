@@ -1,13 +1,18 @@
 var express = require('express');
 var router = express.Router();
+var db = require('../database');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/list', function(req, res, next) {
-  res.render('list', { title: 'Express' });
+ db.getAllResources()
+ .then(resources => {
+     res.render('index', {
+       resources: resources
+     })
+   })
+   .catch(error => {
+     res.render('error', {error: error})
+   })
 });
 
 module.exports = router;
