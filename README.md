@@ -3,7 +3,7 @@
 
 ![image](https://cloud.githubusercontent.com/assets/6962945/19588815/0c66389a-971d-11e6-890c-bbaf1d739fa4.png)
 ## Description
-- Give people alternatives to calling 911 when they, or someone around them are in particular types of crisis 
+- Give people alternatives to calling 911 when they, or someone around them are in particular types of crisis
 - Work towards decoupling access to health care from policing
 - This information would be provided via crowdsourcing resources for trained responders(not police) from communities directly
 ## User Story
@@ -18,7 +18,7 @@
 
 There is a lot of work needed to more clearly define user stories and understand the technical stack needed to build this application. I propose that those of us who are interested on working on this goal and getting it out of draft set a time to meet to work on:
 - [ ] Reaching out to already existing groups that are organizing on this issue to partner with:  http://criticalresistance.org/chapters/cr-oakland/the-oakland-power-projects/
-  https://occupypublichealth.wordpress.com/about/sfbayarea/ 
+  https://occupypublichealth.wordpress.com/about/sfbayarea/
   https://www.1degree.org/
 
 *\* Please offer up suggestions of other organizations that may be good to reach out to...
@@ -36,6 +36,8 @@ I would like the project to be open source. We would have to work to set up the 
 **\* Lets work together to define quality rubric in order to move this goal out of draft.
 ### Please comment with feedback on this goal. If people are serious about building this application lets put in the time outside of LG hours to move this goal out of draft!
 ---
+
+## create database - nocops
 
 <!-- LICENSE -->
 
