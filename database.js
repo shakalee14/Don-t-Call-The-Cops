@@ -23,6 +23,11 @@ const getAllResources = () => {
  return db.any('SELECT * FROM resources')
 }
 
+// const voteForResource = () => {
+//   const sql = `'UPDATE resources SET votes = $1 WHERE id = $2 RETURNING votes'`
+//   return db.on( sql)
+// }
+
 module.exports = {
  createResource: createResource,
  getAllResources: getAllResources

@@ -2,34 +2,26 @@ createresource
  form.resource(method="post" action="/resources")
    label Name of Resource
    br
-   input.resource(type="text" name="name" placeholder="Name of Resource")
+   input.form-control.resource(type="text" name="name" placeholder="Name of Resource")
    br
    label Best Number to Call
    br
-   input.resource(type="tel" name="phone_number" placeholder="Phone Number")
+   input.form-control.resource(type="tel" name="phone_number" placeholder="Phone Number")
    br
    label Address
    br
-   input.resource(type="text" name="address" placeholder="")
+   input.form-control.resource(type="text" name="address" placeholder="address")
    br
    label Website URL
    br
-   input.resource(type="text" name="website_url" placeholder="Website?")
-   br
-   label Zipcode
-   br
-   input.resource(type="text" name="zipcode" placeholder="Zipcode")
+   input.form-control.resource(type="text" name="website_url" placeholder="optional")
    br
    label Resource uploaded by
    br
-   input.resource(type="text" name="created_by" placeholder="Optional")
+   input.form-control.resource(type="text" name="created_by" placeholder="Optional")
    br
    label Description of Resource (why is this resource helpful)
    br
-   input.resource(type="text" name="description" placeholder="Optional")
+   input.form-control.resource(type="text" name="description" placeholder="Optional")
    br
-   label Number of Votes
-   br
-   input.resource(type="number" name="votes" placeholder="Votes")
-   br
-   input.button(type="submit" value="Create Resource")
+   input.btn.create-resource-button(type="submit" value="Create Resource")
