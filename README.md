@@ -1,4 +1,4 @@
-# Helping Hand
+# JustUs
 # Build a Mobile App That Would Provide Resources for People Going Through a Medical or Mental Health Crisis
 
 ![image](https://cloud.githubusercontent.com/assets/6962945/19588815/0c66389a-971d-11e6-890c-bbaf1d739fa4.png)
