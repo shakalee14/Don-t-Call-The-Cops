@@ -7,7 +7,7 @@ CREATE TABLE resources (
  address VARCHAR(255) NOT NULL,
  website_url VARCHAR(255) NOT NULL,
  zipcode INTEGER NOT NULL,
- created_by VARCHAR(255) NOT NULL,
+ created_by VARCHAR(255), 
  description VARCHAR(255) NOT NULL,
  votes INTEGER NOT NULL
 );
