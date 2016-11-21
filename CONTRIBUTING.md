@@ -8,14 +8,34 @@ Open Source Project
 2. Take a ticket from the [project board](https://github.com/GuildCrafts/Don-t-Call-The-Cops/projects/1)
 3. Cut a topic branch
 4. Finish the ticket
-5. Submit a pull request
+
+### Cutting a new branch
+
+```
+git fetch upstream
+git checkout -b issuenumber-my-topic-branch upstream/master
+git push -fu origin HEAD
+```
+
+## Submit a pull request
+Rebase your branch off of the latest upstream/master before submitting your pull request
+
+```
+git commit ... // commit all your changes
+git fetch upstream
+git rebase upstream/master
+//resolve any conflicts
+npm install
+npm test
+git push -f origin HEAD
+```
 
 ### Development Setup
 
 In order to create the database for this project, run the following:
 
 ```
-createdb helpinghand
+createdb NoCops
 ```
 
 #### Fork the Project and Add Remote Upstream
