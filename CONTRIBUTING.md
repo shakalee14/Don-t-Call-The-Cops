@@ -70,7 +70,7 @@ At this point, you should be able to run 'yarn start' or 'npm start' without err
 - Webpack
 - Babel es2016
 - React
-- SQL via Sequelize
+- PostgreSQL and Sequelize ORM
 
 ### Contributors
 
