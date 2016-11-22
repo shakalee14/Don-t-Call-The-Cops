@@ -23,6 +23,12 @@ const config = {
       }
     ]
   },
+  externals: {
+    'cheerio': 'window',
+    'jsdom': 'window',
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
