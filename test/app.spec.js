@@ -2,17 +2,11 @@
 
 import React from 'react'
 import { expect } from 'chai'
-// import ReactDom from 'react-dom'
+import ReactDom from 'react-dom'
 import jsdom from 'jsdom'
 import { mount, shallow, render } from 'enzyme'
 
 import App from '../browser/components/App'
-
-// require('babel-register')();
-
-// var jsdom = require('jsdom').jsdom;
-
-// var exposedProperties = ['window', 'navigator', 'document'];
 
 describe('<App />', () => {
   let wrapper
@@ -33,16 +27,3 @@ describe('<App />', () => {
     expect(wrapper.children('h1').length).to.equal(1)
   })
 })
-
-// describe('app component mounts', () => {
-
-//   // function renderComponent() {
-//   //  let wrapper = mount(<App />)
-
-//   // }
-
-//   it('mounts!', () => {
-//     // renderComponent()
-//     expect(true).toBe(true)
-//   })
-// })

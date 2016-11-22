@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 import dataStore from '../stores/dataStore'
+import $ from 'jquery'
 
 class App extends Component {
   constructor(props){
@@ -24,4 +25,7 @@ class App extends Component {
   }
 }
 
-ReactDom.render( <App />, document.getElementById('main') )
+$(document).ready(function () {
+  ReactDom.render(<App />, document.getElementById('main'));
+});
+
