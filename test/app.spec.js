@@ -11,6 +11,6 @@ import { App } from '../browser/components/App'
 describe('<App />', () => {
   it('should mount the component', () => {
     const wrapper = render( <App /> )
-    expect(wrapper).to.have.text(' JustUs ')
+    expect(wrapper).to.have.text(' JustUs! ')
   })
 })

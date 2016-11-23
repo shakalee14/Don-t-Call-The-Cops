@@ -7,6 +7,8 @@ const bodyParser = require('body-parser')
 const favicon = require('serve-favicon')
 const webpack = require('webpack')
 const config = require('../webpack.config.js')
+require('es6-promise').polyfill()
+require('fetch-everywhere')
 
 const port = 3000
 const server = express()
@@ -21,7 +23,7 @@ server.use(require('webpack-dev-middleware')(compiler, {
 server.use(require('webpack-hot-middleware')(compiler))
 
 server.get('/', (request, response) => {
-  response.sendFile(path.join(__dirname, '../index.html'))
+  response.sendFile(path.join(__dirname, '../browser/index.html'))
 })
 
 server.listen(port, function onAppListening(err){
