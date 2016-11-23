@@ -2,9 +2,10 @@ const path = require('path')
 const webpack = require('webpack')
 
 const config = {
+  target: 'node',
   entry: [
     path.resolve(__dirname, 'main.js'),
-    'webpack-hot-middleware/client'
+    'webpack-hot-middleware/client',
   ],
   output: {
     path: path.join(__dirname, 'build'),
@@ -31,7 +32,13 @@ const config = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.IgnorePlugin(/\/iconv-loader$/),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify("production")
+      }
+    })
   ]
 }
 

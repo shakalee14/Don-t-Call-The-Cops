@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 import dataStore from '../stores/dataStore'
 import $ from 'jquery'
 
-class App extends Component {
+export class App extends Component {
   constructor(props){
     super(props)
     this.state = { data: []}
@@ -17,11 +17,13 @@ class App extends Component {
         this.setState({data: data})
       })
   }
-  render() {
-    return( <div>
-          <h1> JustUs </h1>
-          {this.state.data.name}
-        </div>)
+  render(){
+    return(
+      <div>
+        <h1 className='title'> JustUs </h1>
+        {this.state.data.name}
+      </div>
+    )
   }
 }
 

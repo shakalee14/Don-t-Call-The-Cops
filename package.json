@@ -7,7 +7,7 @@
     "start:dev": "node ./server/index.js",
     "babel-node": "babel-node --presets=es2015",
     "build": "webpack",
-    "test:enzyme": "mocha -w test/helpers/browser.js test/*.spec.js",
+    "test:enzyme": "mocha --compilers js:babel-core/register --require test/helpers/test.js \"./test/*.spec.js\"",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "webpack:devserver": "webpack-dev-server --progress --colors"
   },
@@ -22,6 +22,8 @@
     "babel-register": "^6.18.0",
     "body-parser": "~1.15.1",
     "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.1",
+    "chai-jsx": "^1.0.1",
     "cheerio": "^0.22.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
@@ -45,7 +47,8 @@
     "sqlite3": "^3.1.8",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
-    "webpack-hot-middleware": "^2.13.2"
+    "webpack-hot-middleware": "^2.13.2",
+    "whatwg-fetch": "^2.0.1"
   },
   "devDependencies": {
     "babel-preset-react-hmre": "^1.1.1",
