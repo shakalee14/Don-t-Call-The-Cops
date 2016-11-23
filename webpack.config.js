@@ -21,6 +21,10 @@ const config = {
         query: {
           presets: [ 'es2015', 'react' ]
         }
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css!postcss'
       }
     ]
   },
@@ -33,6 +37,7 @@ const config = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new webpack.IgnorePlugin(/vertx/),
     new webpack.IgnorePlugin(/\/iconv-loader$/),
     new webpack.DefinePlugin({
       "process.env": {

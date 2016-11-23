@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 import dataStore from '../stores/dataStore'
+require('whatwg-fetch')
 import $ from 'jquery'
+import { Button, }
 
 export class App extends Component {
   constructor(props){
@@ -20,6 +22,7 @@ export class App extends Component {
   render(){
     return(
       <div>
+      <button />
         <h1 className='title'> JustUs </h1>
         {this.state.data.name}
       </div>
